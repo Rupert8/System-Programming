@@ -1,43 +1,121 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Системне програмування</title>
+    <title>Веб-сторінка по Git</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
-        h1 {
-            color: #333;
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-
-        p {
-            text-align: center;
-            color: #555;
-        }
-
         .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .certificate {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e2e2e2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Веб-сторінка по Git</h1>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>Системне програмування</h1>
-        <p>Тестова сторінка; Савченко Антон</p>
+        <div class="content">
+            <h2>Що таке системи контролю версій та Git?</h2>
+            <p>Системи контролю версій (VCS) — це інструменти, що дозволяють управляти версіями файлів, трекати зміни та координувати роботу над проектами. Git є однією з найбільш популярних систем контролю версій, що дозволяє розподілено управляти кодом, відстежувати історію змін та зливати різні версії коду.</p>
+
+            <h2>Основні можливості та переваги використання Git</h2>
+            <ul>
+                <li>Розподілене управління версіями.</li>
+                <li>Ефективне злиття змін.</li>
+                <li>Підтримка гілок для організації розробки.</li>
+                <li>Можливість офлайн-роботи.</li>
+                <li>Висока продуктивність при роботі з великими проектами.</li>
+                <li>Підтримка масштабування на великі команди та проекти.</li>
+            </ul>
+
+            <h2>10 базових команд роботи в системі Git</h2>
+            <ul>
+                <li><code>git init</code> — Ініціалізує новий репозиторій Git у поточній директорії.</li>
+                <li><code>git clone [url]</code> — Клонує віддалений репозиторій з зазначеної URL-адреси.</li>
+                <li><code>git add [file]</code> — Додає файли до індексу для подальшого коміту.</li>
+                <li><code>git commit -m "message"</code> — Фіксує зміни у локальному репозиторії з коментарем.</li>
+                <li><code>git status</code> — Показує статус файлів у робочій директорії та індексі.</li>
+                <li><code>git push</code> — Відправляє коміти з локального репозиторія до віддаленого.</li>
+                <li><code>git pull</code> — Завантажує нові зміни з віддаленого репозиторія та зливає їх з локальними змінами.</li>
+                <li><code>git branch</code> — Показує список усіх гілок у репозиторії.</li>
+                <li><code>git checkout [branch]</code> — Перемикає на вказану гілку.</li>
+                <li><code>git merge [branch]</code> — Зливає вказану гілку в поточну гілку.</li>
+            </ul>
+
+            <div class="certificate">
+                <h2>Сертифікат курсу по Git</h2>
+                <p>Щоб отримати сертифікат курсу по Git, ви можете пройти онлайн-курси на платформах, таких як Coursera, Udemy, або Codecademy, які надають сертифікати після успішного завершення навчання.</p>
+            </div>
+
+            <h2>Джерела інформації по темі</h2>
+            <ul>
+                <li><a href="https://git-scm.com/doc" target="_blank">Офіційна документація Git</a></li>
+                <li><a href="https://www.atlassian.com/git/tutorials/what-is-git" target="_blank">Tutorials by Atlassian</a></li>
+                <li><a href="https://www.gitbook.com/" target="_blank">GitBook</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-git" target="_blank">Codecademy Git Course</a></li>
+            </ul>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Веб-сторінка по Git. Всі права захищені.</p>
+    </footer>
 </body>
 </html>

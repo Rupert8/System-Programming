@@ -1,0 +1,182 @@
+/* Загальний стиль для всіх сторінок */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Стиль для заголовку */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Стиль для навігаційного меню */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    margin: 0 15px;
+    padding: 12px 24px;
+    background-color: #34495e;
+    border-radius: 30px;
+    transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Контейнер для секцій */
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+    gap: 20px; /* Відступ між секціями */
+}
+
+/* Стиль для секцій */
+.section {
+    width: 100%; /* Секції займають 100% ширини для всіх сторінок */
+    background-color: #ffffff;
+    padding: 30px; /* Збільшено паддінги для комфортного читання */
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+/* Підсвічування секцій при наведенні */
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовки секцій */
+.section h2 {
+    font-size: 2em; /* Зменшено розмір заголовка для кращої пропорції */
+    color: #1abc9c;
+    margin-bottom: 15px; /* Відступ під заголовком */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Основний текст в секціях */
+.section p {
+    font-size: 1.1em; /* Збільшено розмір шрифту для основного тексту */
+    margin-bottom: 15px; /* Відступ для абзаців */
+    line-height: 1.5; /* Збільшено міжрядковий інтервал для кращої читабельності */
+}
+
+/* Стиль для списків у секціях */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0; /* Відступи між списками */
+}
+
+ul li a {
+    display: inline-block;
+    padding: 12px 25px; /* Паддінги для кнопок */
+    font-size: 1.1em; /* Збільшено розмір шрифту для кнопок */
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul li a:hover {
+    background-color: #1abc9c;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль для футера */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+/* Анімація для секцій */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Робимо body повністю гнучким */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контейнер, який містить основний контент */
+section {
+    flex: 1;
+}
+
+/* Футер автоматично стає внизу */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 1em;
+    margin-top: auto;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

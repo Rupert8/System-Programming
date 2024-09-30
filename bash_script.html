@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASH-cкрипт для авторизації</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>BASH-cкрипт для авторизації</h1>
+    <nav>
+        <a href="index.html">Назад на головну</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Скрипт авторизації</h2>
+    <pre>
+        #!/bin/bash
+
+        # Визначаємо ім'я користувача та пароль
+        CORRECT_USERNAME="admin"
+        CORRECT_PASSWORD="password123"
+        
+        # Запитуємо у користувача ім'я користувача
+        read -p "Введіть ім'я користувача: " USERNAME
+        
+        # Запитуємо у користувача пароль (приховане введення)
+        read -sp "Введіть пароль: " PASSWORD
+        echo # Для переведення на новий рядок після прихованого вводу
+        
+        # Перевіряємо введені дані
+        if [[ "$USERNAME" == "$CORRECT_USERNAME" && "$PASSWORD" == "$CORRECT_PASSWORD" ]]; then
+            echo "Авторизація успішна! Ласкаво просимо, $USERNAME."
+        else
+            echo "Неправильне ім'я користувача або пароль. Спробуйте ще раз."
+        fi
+        
+    </pre>
+</section>
+
+<footer>
+    <p>&copy; 2024 Linux навчання. Всі права захищені.</p>
+</footer>
+</body>
+</html>

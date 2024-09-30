@@ -3,209 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вступ до Git</title>
-    <!-- Додамо Google Fonts -->
+    <title>Вступ до Git та Linux</title>
+    <!-- Підключення Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif; /* Замінили шрифт */
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 0;
-            color: #2c3e50;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 30px 0;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-            font-weight: 700;
-        }
-
-        nav {
-            margin: 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #ecf0f1;
-            margin: 0 15px;
-            padding: 12px 24px;
-            background-color: #34495e;
-            border-radius: 30px;
-            transition: background-color 0.4s, transform 0.3s;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        nav a:hover {
-            background-color: #1abc9c;
-            transform: translateY(-5px);
-        }
-
-        section {
-            margin: 30px auto;
-            padding: 40px;
-            max-width: 1000px;
-            background-color: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #1abc9c;
-            font-size: 2.2em;
-            border-bottom: 2px solid #1abc9c;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        ul li {
-            background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 15px;
-            border-left: 5px solid #1abc9c;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        ul li:hover {
-            transform: scale(1.03);
-        }
-
-        ul li strong {
-            color: #16a085;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            margin-top: 40px;
-            font-size: 1em;
-        }
-
-        .certificate {
-            text-align: center;
-            margin-top: 20px;
-            background-color: #fdfefe;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .certificate img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Додано плавну анімацію для секцій */
-        section {
-            opacity: 0;
-            animation: fadeIn 1.2s forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Стиль для списку джерел */
-        #resources a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        #resources a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <!-- Підключення зовнішнього CSS-файлу -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Системне програмування: Вступ до Git</h1>
-    <nav>
-        <a href="#vcs">Системи контролю версій</a>
-        <a href="#features">Можливості Git</a>
-        <a href="#commands">Команди Git</a>
-        <a href="#certificate">Сертифікат</a>
-        <a href="#resources">Джерела</a>
-    </nav>
+    <h1>Системне програмування: Вступ до Git та Linux</h1>
 </header>
 
-<section id="vcs">
-    <h2>Що таке система контролю версій?</h2>
-    <p>Системи контролю версій (Version Control Systems, VCS) допомагають відстежувати зміни в коді або інших файлах проєкту, дозволяють зберігати різні версії файлів, повертатися до попередніх станів і співпрацювати з іншими розробниками. Однією з найпопулярніших систем контролю версій є Git.</p>
-</section>
+<div class="sections-container">
+    <section class="section">
+        <h2>Оберіть розділ по Git:</h2>
+        <ul>
+            <li><a href="vcs.html">Коротка інформація про системи контролю версій та Git</a></li>
+            <li><a href="features.html">Основні можливості та переваги використання Git</a></li>
+            <li><a href="commands.html">10 базових команд роботи в Git</a></li>
+            <li><a href="certificate.html">Сертифікат курсу по Git</a></li>
+            <li><a href="resources.html">Джерела інформації</a></li>
+        </ul>
+    </section>
 
-<section id="features">
-    <h2>Основні можливості та переваги Git</h2>
-    <ul>
-        <li><strong>Децентралізована структура:</strong> Кожен користувач має повну копію всього репозиторію, що робить роботу ефективною та надійною.</li>
-        <li><strong>Можливість створення гілок:</strong> Легка робота з гілками дозволяє вести незалежні потоки розробки.</li>
-        <li><strong>Історія змін:</strong> Зберігається історія змін для кожного файлу.</li>
-        <li><strong>Конфліктний менеджмент:</strong> Git дозволяє з легкістю вирішувати конфлікти між різними версіями файлів.</li>
-        <li><strong>Інтеграція з платформами:</strong> Підтримка таких платформ, як GitHub, GitLab, Bitbucket для хостингу та співпраці.</li>
-    </ul>
-</section>
-
-<section id="commands">
-    <h2>10 базових команд в Git</h2>
-    <ul>
-        <li><strong>git init</strong> – Ініціалізує новий Git-репозиторій.</li>
-        <li><strong>git clone [url]</strong> – Клонує репозиторій з віддаленого сервера на локальну машину.</li>
-        <li><strong>git add [файл]</strong> – Додає файл до індексу для наступного коміту.</li>
-        <li><strong>git commit -m "повідомлення"</strong> – Фіксує зміни в репозиторії з коментарем.</li>
-        <li><strong>git status</strong> – Показує стан файлів в робочій директорії.</li>
-        <li><strong>git log</strong> – Виводить історію комітів.</li>
-        <li><strong>git pull</strong> – Витягує і зливає зміни з віддаленого репозиторію.</li>
-        <li><strong>git push</strong> – Відправляє зміни на віддалений репозиторій.</li>
-        <li><strong>git branch</strong> – Виводить список гілок або створює нову гілку.</li>
-        <li><strong>git merge</strong> – Об'єднує гілки.</li>
-    </ul>
-</section>
-
-<section class="certificate" id="certificate">
-    <h2>Сертифікат курсу</h2>
-    <p>Після завершення курсу з Git, ви можете отримати сертифікат.</p>
-    <img src="certificate.png" alt="Приклад сертифікату">
-</section>
-
-<section id="resources">
-    <h2>Джерела інформації</h2>
-    <ul>
-        <li><a href="https://git-scm.com/">Офіційний сайт Git</a></li>
-        <li><a href="https://guides.github.com/">Документація GitHub</a></li>
-        <li><a href="https://www.atlassian.com/git/tutorials">Посібник по Git від Atlassian</a></li>
-    </ul>
-</section>
+    <section class="section">
+        <h2>Оберіть розділ по Linux:</h2>
+        <ul>
+            <li><a href="info.html">Коротка інформація про ОС GNU/Linux</a></li>
+            <li><a href="distributions.html">Перелік найбільш популярних дистрибутивів Linux</a></li>
+            <li><a href="commandsLinux.html">Приклади команд роботи в Linux CLI</a></li>
+            <li><a href="bash_script.html">BASH-скрипт, що імітує авторизацію в системі</a></li>
+            <li><a href="resourcesLinux.html">Джерела інформації по Linux</a></li>
+        </ul>
+    </section>
+</div>
 
 <footer>
-    <p>&copy; 2024 Git навчання. Всі права захищені.</p>
+    <p>&copy; 2024 Git та Linux навчання. Всі права захищені.</p>
 </footer>
 
 </body>
